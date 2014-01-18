@@ -1,0 +1,176 @@
+@media screen and (max-width: 960px){
+	body
+	{
+		margin: 0 auto;
+		max-width:1200px;
+	}
+
+	#contenido
+	{
+		width:100%;
+	}
+
+	#contenido .info figure img
+	{
+		width:70%;
+	}
+}
+
+
+@media screen and (max-width: 700px){
+	#contenido .info
+	{
+		width:100%;			
+	}
+
+	#contenido .info figure img
+	{
+		width:70%;
+	}
+
+	#contenido .info .titulo_info, #contenido .info .intro_info,
+	#contenido .info .intro_info
+	{
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+	#contenido .info .leermas
+	{
+		margin-left:20px;
+	}
+
+	#contenido .info p
+	{
+		width:90%;
+		margin: 10px auto;
+	}
+
+	#seccion_contacto
+	{
+		width:100%;
+	}
+
+	#seccion_contacto .contacto
+	{
+		width: 100%;
+	}
+
+	#seccion_contacto .contacto form #submail
+	{
+		width:90%;
+	}
+
+	#seccion_contacto .contacto h2
+	{
+		width: 90%;
+	}
+
+	#seccion_contacto .contacto p
+	{
+		width: 90%;	
+	}
+
+	#seccion_contacto .contacto ul
+	{
+		width:90%;
+		margin-right: 0;
+	}
+
+	#seccion_contacto .contacto form #nombre,
+	#seccion_contacto .contacto form #correo,
+	#seccion_contacto .contacto form #telefono,
+	#seccion_contacto .contacto form #mensaje
+	{
+		width: 90%;
+	}
+
+	footer #contsubfoot
+	{
+		width: 100%;
+	}
+
+	footer #contsubfoot	#foot1, footer #contsubfoot	#foot1
+	{
+		display:block;
+	}
+
+	footer
+	{
+		width:100%;
+	}
+
+	header #header
+	{
+		width:100%;
+		height: 100px;
+	}
+
+	header #header #slider
+	{
+		width: 100%;
+	}
+
+	header nav ul
+	{
+		display:none;
+	}
+	header nav select
+	{
+		display: inline-block;		
+	}
+
+	header nav
+	{
+		display: inline-block;
+		float:left;
+		left:90px;
+	}
+
+	header #logonav
+	{
+		width: 100%;
+	}
+
+	
+}
+
+
+
+/*
+	#contenido, #seccion_contacto
+	{
+		width: auto;
+		float:none;
+	}
+
+	header #slider, header #header
+	{
+		width: auto;
+		float:none;
+		height: auto;
+	}
+
+	header nav ul
+	{
+		display:none;
+	}
+	header nav select
+	{
+		display: inline-block;		
+	}
+
+	header nav
+	{
+		display: inline-block;
+		float:left;
+		left:90px;
+	}
+
+	
+
+}
+
+*/
+
+

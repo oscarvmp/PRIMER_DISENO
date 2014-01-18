@@ -6,13 +6,14 @@
 	<title>PRIMER DISEÑO</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
 	<header>
 	<div id="logonav">		
 		<figure id="logo">
-			<img src="logo.png" />			
+			<img src="imagenes/iconos/logo.png" />			
 		</figure>
 
 		<nav>
@@ -23,6 +24,15 @@
 				<li><a href="#">BLOG</a></li>
 				<li><a href="#">CONTACTO</a></li>
 			</ul>
+			<select> 
+		    <option value="" selected="selected">Select</option> 
+		    
+		    <option value="#">INICIO</option> 
+		    <option value="#">PRODUCTOS</option> 
+		    <option value="#">SERVICIOS</option> 
+		    <option value="#">BLOG</option> 
+		    <option value="#">CONTACTO</option> 
+		  </select> 
 		</nav>
 
 	</div>
@@ -31,7 +41,7 @@
 	<div id="header">			
 	
 		<div id="slider">
-
+			<img src="imagenes/slide.jpg" width="100%" />
 		</div>
 
 	</div>
@@ -49,7 +59,7 @@
 			<p class="intro_info">Lorem ipsum ad his scripta</p>
 			<figure>
 				<a href="#">
-					<img src="imagen.jpg">
+					<img src="imagenes/info.jpg">
 				</a>
 			</figure>
 
@@ -69,7 +79,7 @@
 			<p class="intro_info">Lorem ipsum ad his scripta</p>
 			<figure>
 				<a href="#">
-					<img src="imagen.jpg">
+					<img src="imagenes/info2.jpg">
 				</a>
 			</figure>
 
@@ -89,7 +99,7 @@
 			<p class="intro_info">Lorem ipsum ad his scripta</p>
 			<figure>
 				<a href="#">
-					<img src="imagen.jpg">
+					<img src="imagenes/info3.jpg">
 				</a>
 			</figure>
 
@@ -97,46 +107,103 @@
 
 			<a class="leermas" href="#">Leer más</a>
 			
-		</article>					
+		</article>	
+
+					
 	</section>
 
 
-
-		
 	<section id="seccion_contacto">
-		<article class="social">
+		<article class="contacto">
 			<h2>Redes sociales</h2>
 			<p class="descripcion_social">
-				Síguenos en las siguienetes redes sociales
+				Síguenos en las siguientes redes sociales
 			</p> 
 
-			<h2>Newsletter</h2>
+				<ul>
+					<li><img src="imagenes/iconos/rss.png" alt=""></li>
+					<li><img src="imagenes/iconos/facebook.png" alt=""></li>
+					<li><img src="imagenes/iconos/linkedin.png" alt=""></li>
+					<li><img src="imagenes/iconos/youtube.png" alt=""></li>
+					<li><img src="imagenes/iconos/twitter.png" alt=""></li>
+				</ul>
+			<h2 id="newsletter">Newsletter</h2>
 			<p>¿Quieres enterarte de nuestros próximos temas? Déjanos tu email</p>
 
-			<input type = "text" id = "cajaSencilla"/> 
-			<a class="inscribete_news" href="#">Inscríbete</a>
+			<form>
+				<input id="submail" type="email" placeholder="Tú correo electrónico" required />
+
+				<input id="suscribirse" type="submit" value="Suscribirse" />
+			</form>
 
 		</article>
 
 
-		<article class="formulario_contacto">
+		<article class="contacto">
 			<h2> Contacto </h2>
+
+			<form id="formulario" action="index_submit" method="get" accept-charset="utf-8">
+				<input id="nombre" type="text" placeholder="Tú nombre" required />
+				<input id="correo" type="email" placeholder="Tú correo electrónico" required />
+				<input id="telefono" type="tel" pattern="[0-9]{20}"placeholder="Tu teléfono" />
+				<input id="mensaje" type="text" placeholder="Déjanos un mensaje" required />
+
+				<input id="enviar" type="submit" value="Enviar" />
+			</form>
+
 		</article>
 
-		<aside>
-			<h2>News</h2>
-			<figure class="imagen_news">
-				<a href="#"><img src="noticias/imagen1.jpg"></a>
-				</figure>				
-				<p class="descripcion_news">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</p>					
+
+
+		<aside class="noticias_nuevas">
+			<div class="noticias">
+				<h2>Noticias</h2>
+				<figure class="imagen_news">
+					<a href="#"><img src="imagenes/news1.jpg"></a>
+					</figure>				
+					<p class="descripcion_news">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</p>	
+			</div>			
+
+			<div class="noticias">
+				
+				<figure class="imagen_news">
+					<a href="#"><img src="imagenes/news1.jpg"></a>
+					</figure>				
+					<p class="descripcion_news">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</p>	
+			</div>
+
+				<div class="noticias">
+
+					<figure class="imagen_news">
+						<a href="#"><img src="imagenes/news1.jpg"></a>
+					</figure>	
+
+					<p class="descripcion_news">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</p>	
+				</div>	
+
+				<input id="visita_blog" type="submit" value="Visita nuestro Blog!" />
+							
 		</aside>
 
 	</section>
 
 	<footer>
+	<div id="contsubfoot">
+		
+	
+		<div id="foot1">
+			Powered by Joomla!! Lorem ipsum dolor sit amet <br />
+			Lorem ipsum dolor sit amet<br />
+			Lorem ipsum dolor
+			
+		</div>
 
-			Powered by Joomla!!		
-	</footer>
+		<div id="foot2">
+			Copyright 2010. OscarVMP. All Rights Reserved.
+		</div>
+
+	</div>
+	
 
 </body>
 
